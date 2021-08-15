@@ -3,6 +3,46 @@
 
 This is an example of a REST API using auth tokens with Laravel Sanctum
 
+## How to clone Laravel from Github
+### 1. เปิด Terminal หรือ cmd แล้วเข้าไปยังโฟลเดอร์เป้าหมายที่ต้องการ
+```
+cd c:\xampp\htdoc
+```
+### 2. Clone the repository โดยใช้ git clone [GIT URL] [foldername] และ cd เข้าไปในโฟลเดอร์
+```
+git clone https://github.com/#
+cd laravel_project
+```
+### 3. Run composer to install all dependencies: เพื่อสร้างโฟลเดอร์ vender ซึ่งเป็น Library ที่สำคัญของโปรเจค (เพราะโดยธรรมชาติ Git จะไม่ Commit โฟลเดอร์ Vender)
+```
+composer install
+```
+### 4.  Create your .env from .env.example : เพื่อสร้างไฟล์ config ของโปรเจค (เพราะโดยธรรมชาติ Git จะไม่ Commit ไฟล์ .env)
+```
+copy .env.example .env
+```
+Or
+```
+cp .env.example .env
+```
+### 5. Generate application key : เพื่อสร้าง Key ให้กับ โปรเจค
+```
+php artisan key:generate
+```
+### 6.  Update your .env (change database connection properly) : เพื่อสร้าง Connection ให้กับโปรเจคของเรา
+```
+DB_CONNECTION=mysql          
+DB_HOST=127.0.0.1            
+DB_PORT=3306                 
+DB_DATABASE=mydb       
+DB_USERNAME=root             
+DB_PASSWORD=
+```
+### Start Server
+```
+php artisan serve
+```
+
 ## Command
 ```
 composer create-project laravel/laravel qonnect-laravel
