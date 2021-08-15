@@ -3,6 +3,14 @@
 
 This is an example of a REST API using auth tokens with Laravel Sanctum
 
+## Command
+```
+composer create-project laravel/laravel qonnect-laravel
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+php artisan migrate
+```
+
 ## Usage
 
 Change the *.env.example* to *.env* and add your database info
