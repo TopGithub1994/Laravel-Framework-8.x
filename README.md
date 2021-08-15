@@ -15,6 +15,9 @@ cd laravel_project
 ```
 ### 3. Run composer to install all dependencies: เพื่อสร้างโฟลเดอร์ vender ซึ่งเป็น Library ที่สำคัญของโปรเจค (เพราะโดยธรรมชาติ Git จะไม่ Commit โฟลเดอร์ Vender)
 ```
+composer update
+```
+```
 composer install
 ```
 ### 4.  Create your .env from .env.example : เพื่อสร้างไฟล์ config ของโปรเจค (เพราะโดยธรรมชาติ Git จะไม่ Commit ไฟล์ .env)
