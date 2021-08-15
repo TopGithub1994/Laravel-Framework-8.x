@@ -41,11 +41,15 @@ DB_DATABASE=mydb
 DB_USERNAME=root             
 DB_PASSWORD=
 ```
-### Start Server
+### 7. Start Server
 ```
 php artisan serve
 ```
 
+## Create the table for MySQL
+```
+php artisan migrate
+```
 ## Command
 ```
 composer create-project laravel/laravel qonnect-laravel
