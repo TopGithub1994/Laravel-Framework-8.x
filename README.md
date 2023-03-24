@@ -105,3 +105,8 @@ POST    /api/logout
 ```
 
 ==Reference== :: https://github.com/bradtraversy/laravel-sanctum-api
+
+```
+php artisan config:clear
+php artisan cache:clear
+```
